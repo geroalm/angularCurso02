@@ -3,7 +3,7 @@
   
     <div class="list-group list-reset">
       <a *ngFor="let cadaReg of getHistorial()" href="#" class="list-group-item list-group-item-action">
-        {{cadaReg}}
+        {{cadaReg | titlecase}}
       </a>
   
     </div>

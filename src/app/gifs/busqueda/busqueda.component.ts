@@ -15,6 +15,7 @@ export class BusquedaComponent {
   buscar(){
     const valor =  this.busqueda.nativeElement.value;
 
+    if(valor.trim().length===0){return}
     this.service.buscarGifs(valor);
 
     this.busqueda.nativeElement.value="";
