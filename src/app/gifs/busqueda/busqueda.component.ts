@@ -10,7 +10,8 @@ export class BusquedaComponent {
 
   constructor(private service:GifsService){}
 
-  @ViewChild('txtBuscar') busqueda!:ElementRef<HTMLInputElement>;
+  @ViewChild('txtBuscar') 
+  busqueda!:ElementRef<HTMLInputElement>;
 
   buscar(){
     const valor =  this.busqueda.nativeElement.value;
