@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Gif } from '../interfaces/gif.interfaces';
 
 @Component({
   selector: 'app-resultados',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class ResultadosComponent {
 
+  @Input()
+  public gifs: Gif[] = [];
 }
