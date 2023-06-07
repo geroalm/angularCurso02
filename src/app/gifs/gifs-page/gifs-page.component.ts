@@ -9,9 +9,11 @@ import { Gif } from '../interfaces/gif.interfaces';
 })
 export class GifsPageComponent {
 
-  constructor (private gifService: GifsService){}
-
-
+  constructor (private gifService: GifsService){
+    if(!gifService.historial[0])return;
+    gifService.buscarGifs(gifService.historial[0]);
+    
+  }
 
   get gifs():Gif[]{
     return this.gifService.listaGif;

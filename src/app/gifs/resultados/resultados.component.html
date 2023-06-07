@@ -1,17 +1,8 @@
 <div class="row">
-    <div *ngFor="let cadaGif of gifs" class="col-md-3 col-sm-6">
-        <div class="card mb-2 texr-center bg-dark">
+        <gif-card
+            *ngFor="let gif of gifs"
             
-            <img [src]="cadaGif.images.downsized_medium.url" 
-                 [alt]="cadaGif.title"
-                 class="card-img-top">
-
-            <div class="card-body text-white">
-                <p class="cart-text">
-                   {{ cadaGif.title}}
-                </p>
-            </div>
-        </div>
-
-    </div>
+            [gif]="gif"
+            class="col-md-3 col-sm-3">
+        </gif-card>
 </div>
