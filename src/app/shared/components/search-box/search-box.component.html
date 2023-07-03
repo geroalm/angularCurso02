@@ -1,0 +1,13 @@
+<div class="row">
+    <div class="col">
+        <!-- Busquedas -->
+        <input type="text" 
+        [placeholder]="placeholder" 
+        class="form-control"
+        (keyup.enter)="emitValue(txtInput.value)"
+        #txtInput
+        >
+        <hr>
+
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<h2>Por Capital</h2>
+<hr>
+<search-box
+    placeholder="Buscar por capital"
+    (onValue) = searchByCapital($event)>
+</search-box>
+<div class="row">
+    <div class="col">
+        <countries-table [countries]="countries"></countries-table>
+    </div>
+</div>
